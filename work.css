@@ -1,0 +1,88 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #262626;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: .4em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+/* Style the "Work" section */
+#work h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.work-experience,
+.training,
+.stage-management,
+.special-talents,
+.work-community-service {
+    margin-bottom: 40px;
+}
+
+.work-experience ul,
+.training ul,
+.stage-management ul,
+.work-community-service ul {
+    list-style: none;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.work-experience ul li,
+.training ul li,
+.stage-management ul li,
+.work-community-service ul li {
+    margin-bottom: 8px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: .5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}

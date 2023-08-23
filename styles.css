@@ -1,0 +1,134 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* ... Previous styles ... */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Apply some basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #262626;
+    background-image: url('https://i.imgur.com/Ntr4oDb.jpeg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Adjust background size and position for larger screens */
+@media (min-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -60px;
+    padding-bottom: 60px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: .4em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+#home h1,
+#home p,
+#bio h2,
+#bio p {
+    text-align: left; /* Align texts to the left */
+    max-width: 75%; /* Limit the width of the texts */
+    margin-left: 20px; /* Add some left margin for separation */
+}
+
+/* Style the bio section */
+#bio {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+    color: #fff;
+    position: relative; /* Add relative positioning to the bio section */
+}
+
+.bio-content {
+    max-width: 400px;
+    z-index: 1; /* Set a higher z-index to ensure it's above the background image */
+}
+
+.bio-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.bio-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: .5em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+}
+
+/* Style the contact form */
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+}
